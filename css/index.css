@@ -1,0 +1,824 @@
+/*  RESET   */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+
+/*  HELPERS */
+
+.FlexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.FlexColumn {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*  GLOBALS */
+
+
+html {
+    background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%);
+    font-size: 68.5%;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+
+/*  HEADER  */
+
+header nav {
+    justify-content:space-between;
+    width: 100%;
+    height: 6rem;
+    background-color: #0C74DC;
+}
+
+header li {
+    color: white;
+}
+
+
+
+header ul {
+    font-size: 2em;
+    margin: 2rem 5rem;
+    justify-content: center;
+    width: auto;
+    gap: 5rem;
+    align-items: center;
+}
+
+header img {
+    width: 20rem;
+    margin: 0rem 2rem;
+}
+
+
+
+@media screen and (max-width: 1065px){
+    header li {
+        font-size: 0.9em;
+    }
+    header ul {
+        gap: 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 1031px) {
+    header ul {
+        font-size: 2em;
+        margin: 1rem 3rem;
+        justify-content: center;
+        width: auto;
+        gap: 1.8rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 890px){
+    header li {
+        font-size: 0.8em;
+    }
+    
+}
+
+@media screen and (max-width: 837px){
+    header img {
+        width: 12rem;
+        margin: 0.5rem;
+        height: 5rem;
+    }
+    
+}
+
+@media screen and (max-width:720px) {
+    header img {
+        width: 10rem;
+        margin: auto 0.5rem;
+        height: 3rem;
+    }
+    header li {
+        font-size: 0.6em;
+    }
+    header nav {
+        gap: 0rem;
+    }
+    header ul {
+        margin: auto 0.5rem;
+        
+    }
+}
+
+@media screen and (max-width:535px) {
+    
+    header img {
+        width: 8rem;
+        margin: auto 0.3rem;
+        height: 3rem;
+    }
+    header ul {
+        margin: auto 0.5rem;
+        gap: 1rem;
+        flex-wrap: wrap;    
+    }
+    
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #243A50;
+}
+
+footer img {
+    width: 3rem;
+}
+
+footer ul {
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+
+}
+
+
+/*  INDEX   */
+
+.INDEX {
+    gap: 7rem;
+}
+
+/* INDEX: QuienesSomos */
+
+.quienesSomos {
+    width: 70%;
+    margin: 0rem auto;
+}
+
+.quienesSomos article {
+    margin: 1rem;
+    justify-content: center;
+}
+
+.quienesSomos img {
+    width: 40rem;
+}
+
+.quienesSomos div {
+    width: 40rem;
+    padding: 4rem;
+}
+
+.quienesSomos h2 {
+    text-align: center;
+    font-size: 3rem;
+    text-decoration:underline;
+    margin: 2rem;
+}
+
+
+.quienesSomos p {
+    font-size: 2rem;
+}
+
+
+@media screen and (max-width:1210px) {
+    .quienesSomos img {
+        width: 30rem;
+    }
+    .quienesSomos div {
+        width: 30rem;
+        padding: 2rem;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    .quienesSomos img {
+        width: 25rem;
+    }
+    .quienesSomos div {
+        width: 25rem;
+        padding: 1.5rem;
+    }
+    .quienesSomos h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-decoration:underline;
+        margin: 1.5rem;
+    }
+    
+    
+    .quienesSomos p {
+        font-size: 1rem;
+    }
+
+    .quienesSomos {
+        width: 90%;
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width:600px) {
+    .quienesSomos img {
+        width: 20rem;
+    }
+    .quienesSomos div {
+        width: 20rem;
+        padding: 1rem;
+    }
+    .quienesSomos h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        text-decoration:underline;
+        margin: 1rem;
+    }
+    
+    
+    .quienesSomos p {
+        font-size: 0.8rem;
+    }
+
+    .quienesSomos {
+        width: 100%;
+    }
+    
+    
+
+}
+
+@media screen and (max-width: 460px) {
+    .quienesSomos h2 {
+        font-size: 1.5rem;
+    }
+    .quienesSomos img {
+        width: 15rem;
+    }
+    .quienesSomos div {
+        padding: 0.5rem;
+    }
+}
+
+
+
+
+/* INDEX: EjesDeTrabajo */
+
+.GridEjesTrabajo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 3fr;
+}
+
+
+.ejesTrabajo {
+    width: 80rem;
+    margin: 10rem auto;
+}
+
+.ejesTrabajo h2 {
+    text-align: center;
+    margin: 4rem;
+    font-size: 3.5em;
+    text-decoration:underline;
+    grid-column: 1/3;
+}
+
+.ejesTrabajo h3 {
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration:underline;
+    margin: 1rem;
+}
+
+.ejesTrabajo p {
+    font-size: 1.5em;
+}
+
+
+.ejesTrabajo img {
+    width: 30rem;
+    margin: 1rem;
+}
+
+.ejesTrabajo div {
+    width: 35rem;
+    padding: 3rem;
+}
+
+
+@media screen and (max-width:900px) {
+    .ejesTrabajo img {
+        width: 20rem;
+        margin: 1rem;
+    }   
+    .ejesTrabajo div {
+        width: 25rem;
+        padding: 3rem;
+    }
+    .ejesTrabajo {
+        width: 60rem;
+        margin: 10rem auto;
+    }
+    
+}
+
+
+@media screen and (max-width:650px) {
+    .ejesTrabajo img {
+        width: 15rem;
+        margin: 1rem;
+    }   
+    .ejesTrabajo div {
+        width: 15rem;
+        padding: 1rem;
+    }
+    .ejesTrabajo {
+        width: 40rem;
+        margin: 10rem auto;
+    }
+    .ejesTrabajo p {
+        font-size: 1em;
+    }
+    .ejesTrabajo h2 {
+        text-align: center;
+        margin: 4rem;
+        font-size: 3em;
+        text-decoration:underline;
+    }
+    
+    .ejesTrabajo h3 {
+        text-align: center;
+        font-size: 2em;
+        text-decoration:underline;
+        margin: 1rem;
+    }
+    .GridEjesTrabajo {
+        height: 80rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 465px) {
+    .ejesTrabajo {
+        width: 30rem;
+        margin: 5rem auto;
+    }
+    .ejesTrabajo img {
+        width: 10rem;
+        margin: 1rem;
+    }   
+    .ejesTrabajo div {
+        width: 10rem;
+        padding: 1rem;
+    }
+    .GridEjesTrabajo {
+        height: 100rem;
+    }
+}
+
+
+
+/* INDEX: CursosDestacados */
+
+.cursosDestacados article{
+    align-items: center;
+    justify-content: center;
+}
+
+.cursosDestacados div {
+    justify-content: space-around;
+}
+
+.cursosDestacados h2 {
+    text-align: center;
+    text-decoration:underline;
+    font-size: 3.5em;
+    margin: 2rem;
+}
+
+.cursosDestacados h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cursosDestacados img {
+    width: 35rem;
+}
+
+
+@media screen and (max-width: 1124px) {
+    .cursosDestacados img {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .cursosDestacados img {
+        width: 10rem;
+    }
+    .cursosDestacados h2 {
+        text-align: center;
+        text-decoration:underline;
+        font-size: 3em;
+        margin: 2rem;
+    }
+    
+    .cursosDestacados h4 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* QUIENES-SOMOS: Nosotros */
+
+.nosotros article {
+    width: 60%;
+    padding: 3rem ;
+    margin: 2rem auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem 1.5rem 5rem 5rem;
+    gap: 1.5rem;
+}
+
+.nosotros h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.nosotros p {
+    margin: 0px 0px 2rem 1.5rem;
+    font-size: 1.5em;
+}
+
+.nosotros h3 {
+    font-size: 2em;
+}
+
+/* QUIENES-SOMOS: Principios */
+
+.Principios article {
+    width: 50%;
+    padding: 3rem;
+    margin: 4rem auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(108, 112, 114, 0.07) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem 5rem 5rem 1.5rem;
+}
+
+.Principios h3 {
+    display: inline-block;
+    font-size: 2em;
+}
+
+.Principios li {
+    margin: 1rem;
+    font-size: 1.5em;
+}
+
+.Principios ul {
+    margin: 2rem;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .MainNosotros h2 {
+        font-size: 2.5em;
+    }
+    .MainNosotros h3 {
+        font-size: 1.5em;
+    }
+    .MainNosotros p {
+        font-size: 1em;
+    }
+    .MainNosotros li {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .nosotros article {
+        width: 90%;
+    }
+
+    .Principios article {
+        width: 80%;
+    }
+    .nosotros h2 {
+        font-size: 2.5em;
+        margin-bottom: 2rem;
+    }
+    .nosotros p {
+        font-size: 1em;
+    }
+    .nosotros h3 {
+        font-size: 1.5em;
+    }
+    
+}
+
+
+
+/* CURSOS: Main */
+.cursos {
+    width: 50rem;
+    padding: 2rem 5rem;
+    margin: 2rem auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    border-radius: 15px 15px 50px 50px;
+    gap: 1rem;
+}
+
+.cursos h3 {
+    font-size: 1.5em;
+}
+
+.cursos p {
+    font-size: 1em;
+}
+
+.cursos article {
+    gap: 2rem;
+    margin: 2rem auto;
+
+}
+
+.cursos div {
+    display: inline-block;
+    width: 20rem;
+    margin: 2.5rem;
+}
+
+.cursos img {
+    width: 10rem;
+    margin: 0 auto;
+}
+
+#h2cursos {
+    margin: 2rem;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+
+
+@media screen and (max-width: 660px) {
+    .cursos {
+        width: 40rem;
+        gap: 0.5rem;
+    }
+    #h2cursos{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .cursos{
+        width: 30rem;
+        padding: 1rem 4rem;
+
+    }
+    .cursos h3 {
+        font-size: 1.2em;
+    }
+    
+    .cursos p {
+        font-size: 0.8em;
+    }
+    .cursos div {
+        width: 10rem;
+    }
+
+}
+
+
+
+/* CONTACTO: Form*/
+
+.GridForm{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 8fr 3fr;
+    grid-row-gap: 1rem;
+    max-width: 800px;
+}
+
+.contacto form textarea {
+    font-size: 2em;
+    grid-column: 1/5;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+}
+#FormBoton {
+    grid-column: 1/5;
+    width: 15%;
+    height: 40%;
+    margin: auto;
+}
+.BodyContacto{
+    height: 100vh;
+    justify-content:space-between;
+}
+.contacto h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5em;
+}
+
+.contacto label {
+    margin: auto;
+    text-align: center;
+
+}
+
+
+.contacto form label {
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.contacto form {
+    width: 70%;
+    height: 40rem;
+    padding: 3rem;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.25);
+    border-radius: 3rem;
+}
+
+
+
+@media screen and (max-width:900px) {
+    .contacto form label {
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .GridForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto form {
+        height: 46rem;
+    }
+    .contacto {
+        margin-bottom: 1rem ;
+    }
+    #FormBoton{
+        height: 20%;
+        width: 20%;
+        font-size: 1em;
+    }
+    .contacto form input {
+        width: 85%;
+        margin: auto;
+    } 
+    .contacto h1 {
+        font-size: 2em;
+    }
+    .contacto form textarea {
+        font-size: 1.5em;
+    }
+}
+
+
+
+/* PROGRAMAS-SERVICIOS: MAIN */
+.programasServicios {
+    padding: 2rem 0rem;
+    width: 82rem;
+    margin: 4rem auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem 1.5rem 5rem 5rem;
+}
+
+
+.programasServicios article {
+    width: 80rem;
+    padding: 3rem;
+    margin: 1.5rem 0rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(108, 112, 114, 0.21) 100%);
+    box-shadow: 0.8rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.25);
+    border-radius: 0rem 3rem 4rem 0rem;
+
+}
+
+.programasServicios article h2 {
+    font-size: 2em;
+}
+.programasServicios article p {
+    font-size: 1.5em;
+}
+
+
+.programasServicios h1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.5em;
+}
+
+
+@media screen and (max-width: 950px) {
+    .programasServicios h1 {
+        font-size: 2em;
+    }
+
+    .programasServicios article h2 {
+        font-size: 1.5em;
+    }
+    .programasServicios article p {
+        font-size: 1em;
+    }
+    
+    .programasServicios article {
+        width: 60rem;
+        padding: 2rem;
+        margin: 1rem;
+    }
+    .programasServicios{
+        width: 62rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .programasServicios h1 {
+        font-size: 1.8em;
+    }
+
+    .programasServicios article h2 {
+        font-size: 1.3em;
+    }
+    .programasServicios article p {
+        font-size: 0.8em;
+    }
+    
+    .programasServicios article {
+        width: 40rem;
+    }
+    .programasServicios{
+        width: 42rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .programasServicios h1 {
+        font-size: 1.6em;
+    }
+
+    .programasServicios article h2 {
+        font-size: 1.2em;
+    }
+    .programasServicios article p {
+        font-size: 0.7em;
+    }
+    
+    .programasServicios article {
+        width: 30rem;
+    }
+    .programasServicios{
+        width: 32rem;
+    }
+    
+}
