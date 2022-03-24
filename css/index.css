@@ -23,8 +23,17 @@
 
 }
 
+/* Animations */
+@keyframes CargarContenido {
+    0%{transform: scale(0);}
+    100%{transform: scale(1);}
+}
 /*  GLOBALS */
 
+main * {
+    animation-name: CargarContenido;
+    animation-duration: 1.5s;
+}
 
 html {
     background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%);
@@ -44,7 +53,6 @@ li {
 
 
 
-
 /*  HEADER  */
 
 header nav {
@@ -56,9 +64,12 @@ header nav {
 
 header li {
     color: white;
+    transition: transform 0.5s;
 }
 
-
+header li:hover {
+    transform: scale(1.2);
+}
 
 header ul {
     font-size: 2em;
@@ -162,7 +173,14 @@ footer ul {
     justify-content: flex-end;
     gap: 0.5rem;
     padding: 1rem;
+}
 
+footer li {
+    transition: transform 0.5s;
+}
+
+footer li:hover {
+    transform: scale(1.1);
 }
 
 
