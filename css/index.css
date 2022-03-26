@@ -1,3 +1,43 @@
+/* Ajustes Bootstrap */
+
+body {
+    background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%);
+}
+
+.ContenedorCarousel {
+    width: 50%;
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.navbar-collapse {
+    
+    flex-grow: 0;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+    font-size: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.664);
+    font-size: 2rem;
+}
+
+.navbar-nav {
+    gap:1.5rem;
+}
+
+.navbar-nav a {
+    text-align: center;
+}
+
+.navbar-collapse {
+    background-color: #0c74dcd7;
+}
+
 /*  RESET   */
 *,
 *::after,
@@ -36,7 +76,6 @@ main * {
 }
 
 html {
-    background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%);
     font-size: 68.5%;
 }
 
@@ -81,8 +120,7 @@ header ul {
 }
 
 header img {
-    width: 20rem;
-    margin: 0rem 2rem;
+    width: 19rem;
 }
 
 
@@ -105,6 +143,19 @@ header img {
         width: auto;
         gap: 1.8rem;
         align-items: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header img {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 837px) {
+    header img {
+        width: 10rem!important;
+        height: 3.6rem!important;
     }
 }
 
@@ -173,6 +224,7 @@ footer ul {
     justify-content: flex-end;
     gap: 0.5rem;
     padding: 1rem;
+    margin: 0;
 }
 
 footer li {
@@ -193,7 +245,6 @@ footer li:hover {
 /* INDEX: QuienesSomos */
 
 .quienesSomos {
-    width: 70%;
     margin: 0rem auto;
 }
 
@@ -255,12 +306,6 @@ footer li:hover {
         font-size: 1rem;
     }
 
-    .quienesSomos {
-        width: 90%;
-    }
-    
-    
-
 }
 
 
@@ -283,12 +328,6 @@ footer li:hover {
     .quienesSomos p {
         font-size: 0.8rem;
     }
-
-    .quienesSomos {
-        width: 100%;
-    }
-    
-    
 
 }
 
@@ -317,7 +356,6 @@ footer li:hover {
 
 
 .ejesTrabajo {
-    width: 80rem;
     margin: 10rem auto;
 }
 
@@ -343,12 +381,16 @@ footer li:hover {
 
 .ejesTrabajo img {
     width: 30rem;
-    margin: 1rem;
+    margin: 1rem auto;
 }
 
 .ejesTrabajo div {
     width: 35rem;
     padding: 3rem;
+    margin: 0 auto;
+}
+.ejesTrabajo picture{
+    margin: 0 auto;
 }
 
 
@@ -362,7 +404,6 @@ footer li:hover {
         padding: 3rem;
     }
     .ejesTrabajo {
-        width: 60rem;
         margin: 10rem auto;
     }
     
@@ -379,7 +420,6 @@ footer li:hover {
         padding: 1rem;
     }
     .ejesTrabajo {
-        width: 40rem;
         margin: 10rem auto;
     }
     .ejesTrabajo p {
@@ -407,8 +447,8 @@ footer li:hover {
 
 @media screen and (max-width: 465px) {
     .ejesTrabajo {
-        width: 30rem;
         margin: 5rem auto;
+        height: 120rem;
     }
     .ejesTrabajo img {
         width: 10rem;
@@ -650,54 +690,13 @@ footer li:hover {
 
 /* CONTACTO: Form*/
 
-.GridForm{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 8fr 3fr;
-    grid-row-gap: 1rem;
-    max-width: 800px;
-}
-
-.contacto form textarea {
-    font-size: 2em;
-    grid-column: 1/5;
-    width: 80%;
-    height: 90%;
-    margin: auto;
-}
-#FormBoton {
-    grid-column: 1/5;
-    width: 15%;
-    height: 40%;
-    margin: auto;
-}
-.BodyContacto{
-    height: 100vh;
-    justify-content:space-between;
-}
-.contacto h1 {
-    text-align: center;
-    margin: 2rem;
-    font-size: 2.5em;
-}
-
-.contacto label {
-    margin: auto;
-    text-align: center;
-
-}
 
 
-.contacto form label {
-    margin: auto;
-    font-size: 1.5em;
-}
-
-.contacto form {
-    width: 70%;
-    height: 40rem;
+.contacto{
+    
+    max-width: 668px;
     padding: 3rem;
-    margin: 0 auto;
+    margin: 5rem auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
     box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.25);
     border-radius: 3rem;
@@ -705,40 +704,15 @@ footer li:hover {
 
 
 
-@media screen and (max-width:900px) {
-    .contacto form label {
-        font-size: 1.2em;
-    }
-
+.MainContacto{
+    height: 84.5vh;
 }
 
-@media screen and (max-width: 750px) {
-    .GridForm{
-        display: flex;
-        flex-direction: column;
-    }
-    .contacto form {
-        height: 46rem;
-    }
-    .contacto {
-        margin-bottom: 1rem ;
-    }
-    #FormBoton{
-        height: 20%;
-        width: 20%;
-        font-size: 1em;
-    }
-    .contacto form input {
-        width: 85%;
-        margin: auto;
-    } 
-    .contacto h1 {
-        font-size: 2em;
-    }
-    .contacto form textarea {
-        font-size: 1.5em;
-    }
+.MainContacto h1{
+    text-align: center;
+    margin: 5rem;
 }
+
 
 
 
