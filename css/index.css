@@ -10,6 +10,25 @@
 }
 
 
+/* Ajustes Bootstrap */
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgba(255, 255, 255, 0.589);
+}
+
+
+body {
+    
+    background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%);
+    
+}
+
+
+
 /*  HELPERS */
 
 .FlexRow {
@@ -36,7 +55,6 @@ main * {
 }
 
 html {
-    background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%);
     font-size: 68.5%;
 }
 
@@ -55,16 +73,81 @@ li {
 
 /*  HEADER  */
 
-header nav {
-    justify-content:space-between;
-    width: 100%;
-    height: 6rem;
+header {
     background-color: #0C74DC;
 }
 
-header li {
+.Navegacion__Logo {
+    width: 20rem;
+    margin: 0rem 2rem;
+}
+
+.Navegacion__Div{
+    font-size: 2em;
+}
+
+.Navegacion__Div__Ul{
+    gap: 1rem;
+}
+
+.Navegacion__Btn{
+    width: 8rem;
+    height: 5rem;
+}
+
+.Navegacion__Icon-Btn{
+    width: 5rem;
+    height: 3rem;
+}
+
+.Navegacion__Div__Ul__Li{
     color: white;
     transition: transform 0.5s;
+    
+}
+
+.Navegacion__Div__Ul__Li:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:991.9px) {
+    .Navegacion__Div__Ul__Li{
+        text-align: center;
+        border: black solid 0.1rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .Navegacion__Btn{
+        width: 6rem;
+        height: 4rem;
+    }
+    
+    .Navegacion__Icon-Btn{
+        width: 3rem;
+        height: 2rem;
+    }
+    .Navegacion__Logo {
+        width: 15rem;
+        margin: 0rem 1rem;
+    }
+    
+}
+
+
+
+
+
+
+/*
+header nav {
+    justify-content:space-between;
+}
+
+header li {
 }
 
 header li:hover {
@@ -72,7 +155,6 @@ header li:hover {
 }
 
 header ul {
-    font-size: 2em;
     margin: 2rem 5rem;
     justify-content: center;
     width: auto;
@@ -157,7 +239,7 @@ header img {
     
 }
 
-
+*/
 
 /* FOOTER */
 
