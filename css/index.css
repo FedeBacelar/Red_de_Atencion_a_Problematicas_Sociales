@@ -243,57 +243,66 @@ header img {
 
 /* FOOTER */
 
-footer {
+.Footer {
     background-color: #243A50;
+    justify-content: end;
+    justify-items: center;
 }
 
-footer img {
+.Footer__ul__li__a__picture__img {
     width: 3rem;
 }
 
-footer ul {
+.Footer__ul {
     justify-content: flex-end;
-    gap: 0.5rem;
-    padding: 1rem;
+    gap: 0.7rem;
+    padding: 0;
+    margin: 0.7rem;
 }
 
-footer li {
+.Footer__ul__li {
     transition: transform 0.5s;
 }
 
-footer li:hover {
+.Footer__ul__li:hover {
     transform: scale(1.1);
 }
 
 
 /*  INDEX   */
 
+/*
 .INDEX {
     gap: 7rem;
 }
 
+*/
+
 /* INDEX: QuienesSomos */
 
+
+
 .quienesSomos {
-    width: 70%;
-    margin: 0rem auto;
+    width: 80%;
+    margin: 5rem auto;
+    max-width: 963px;
 }
 
-.quienesSomos article {
+.quienesSomos__article {
     margin: 1rem;
     justify-content: center;
 }
 
-.quienesSomos img {
+.quienesSomos__article__picture__imagen {
     width: 40rem;
 }
 
-.quienesSomos div {
+.quienesSomos__article__div {
     width: 40rem;
     padding: 4rem;
 }
 
-.quienesSomos h2 {
+.quienesSomos__article__div__Titulo {
     text-align: center;
     font-size: 3rem;
     text-decoration:underline;
@@ -301,16 +310,16 @@ footer li:hover {
 }
 
 
-.quienesSomos p {
+.quienesSomos__article__div__Parrafo {
     font-size: 2rem;
 }
 
 
 @media screen and (max-width:1210px) {
-    .quienesSomos img {
+    .quienesSomos__article__picture__imagenimg {
         width: 30rem;
     }
-    .quienesSomos div {
+    .quienesSomos__article__div {
         width: 30rem;
         padding: 2rem;
     }
@@ -318,14 +327,14 @@ footer li:hover {
 
 
 @media screen and (max-width:1000px) {
-    .quienesSomos img {
+    .quienesSomos__article__picture__imagen {
         width: 25rem;
     }
-    .quienesSomos div {
+    .quienesSomos__article__div {
         width: 25rem;
         padding: 1.5rem;
     }
-    .quienesSomos h2 {
+    .quienesSomos__article__div__Titulo {
         text-align: center;
         font-size: 2rem;
         text-decoration:underline;
@@ -333,12 +342,12 @@ footer li:hover {
     }
     
     
-    .quienesSomos p {
+    .quienesSomos__article__div__Parrafo {
         font-size: 1rem;
     }
 
     .quienesSomos {
-        width: 90%;
+        width: 100%;
     }
     
     
@@ -347,14 +356,14 @@ footer li:hover {
 
 
 @media screen and (max-width:600px) {
-    .quienesSomos img {
+    .quienesSomos__article__picture__imagen {
         width: 20rem;
     }
-    .quienesSomos div {
+    .quienesSomos__article__div {
         width: 20rem;
         padding: 1rem;
     }
-    .quienesSomos h2 {
+    .quienesSomos__article__div__Titulo {
         text-align: center;
         font-size: 1.8rem;
         text-decoration:underline;
@@ -362,7 +371,7 @@ footer li:hover {
     }
     
     
-    .quienesSomos p {
+    .quienesSomos__article__div__Parrafo {
         font-size: 0.8rem;
     }
 
@@ -375,13 +384,14 @@ footer li:hover {
 }
 
 @media screen and (max-width: 460px) {
-    .quienesSomos h2 {
+    .quienesSomos__article__div__Titulo {
         font-size: 1.5rem;
+        margin: 0.5rem;
     }
-    .quienesSomos img {
+    .quienesSomos__article__picture__imagen {
         width: 15rem;
     }
-    .quienesSomos div {
+    .quienesSomos__article__div {
         padding: 0.5rem;
     }
 }
@@ -394,57 +404,62 @@ footer li:hover {
 .GridEjesTrabajo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 3fr;
+    grid-template-rows: 5fr 8fr 8fr 8fr;
 }
 
 
 .ejesTrabajo {
     width: 80rem;
     margin: 10rem auto;
+    max-width: 876px;
 }
 
-.ejesTrabajo h2 {
+.ejesTrabajo__Titulo {
     text-align: center;
-    margin: 4rem;
+    margin: auto 4rem;
     font-size: 3.5em;
     text-decoration:underline;
     grid-column: 1/3;
 }
 
-.ejesTrabajo h3 {
+.ejesTrabajo__Div__Titulo {
     text-align: center;
     font-size: 2.5em;
     text-decoration:underline;
     margin: 1rem;
 }
 
-.ejesTrabajo p {
+.ejesTrabajo__Div__Descripcion {
     font-size: 1.5em;
 }
 
+.ejesTrabajo__picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.ejesTrabajo img {
+.ejesTrabajo__picture__Imagen {
     width: 30rem;
     margin: 1rem;
 }
 
-.ejesTrabajo div {
-    width: 35rem;
+.ejesTrabajo__Div {
+    width: 100%;
     padding: 3rem;
 }
 
 
 @media screen and (max-width:900px) {
-    .ejesTrabajo img {
+    .ejesTrabajo__picture__Imagen {
         width: 20rem;
         margin: 1rem;
     }   
-    .ejesTrabajo div {
-        width: 25rem;
+    .ejesTrabajo__Div {
         padding: 3rem;
     }
     .ejesTrabajo {
-        width: 60rem;
+        width: 100%;
         margin: 10rem auto;
     }
     
@@ -452,56 +467,65 @@ footer li:hover {
 
 
 @media screen and (max-width:650px) {
-    .ejesTrabajo img {
+    .ejesTrabajo__picture__Imagen {
         width: 15rem;
         margin: 1rem;
     }   
-    .ejesTrabajo div {
-        width: 15rem;
-        padding: 1rem;
+    .ejesTrabajo__Div {
+        padding-right: 5rem;
     }
     .ejesTrabajo {
-        width: 40rem;
-        margin: 10rem auto;
+        margin: 5rem auto;
     }
-    .ejesTrabajo p {
+    .ejesTrabajo__Div__Descripcion {
         font-size: 1em;
     }
-    .ejesTrabajo h2 {
+    .ejesTrabajo__Titulo {
         text-align: center;
-        margin: 4rem;
+        margin: auto 2rem;
         font-size: 3em;
         text-decoration:underline;
     }
     
-    .ejesTrabajo h3 {
+    .ejesTrabajo__Div__Titulo {
         text-align: center;
         font-size: 2em;
         text-decoration:underline;
         margin: 1rem;
     }
-    .GridEjesTrabajo {
-        height: 80rem;
-    }
+    
     
     
 }
 
 @media screen and (max-width: 465px) {
     .ejesTrabajo {
-        width: 30rem;
+        width: 90%;
         margin: 5rem auto;
     }
-    .ejesTrabajo img {
-        width: 10rem;
+    .ejesTrabajo__Titulo{
+        order: -3;
         margin: 1rem;
-    }   
-    .ejesTrabajo div {
+    }
+    .ejesTrabajo__picture__Imagen {
         width: 10rem;
+        margin-top: 2rem;
+    }   
+
+    .ejesTrabajo__Div {
         padding: 1rem;
     }
     .GridEjesTrabajo {
-        height: 100rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ImagenCapacitacion{
+        order: -2;
+    }
+    #TextoCapacitacion{
+        order: -1;
     }
 }
 
@@ -509,54 +533,71 @@ footer li:hover {
 
 /* INDEX: CursosDestacados */
 
-.cursosDestacados article{
+.cursosDestacados{
+    gap: 1rem;
+    margin: 5rem auto;
+    max-width: 1110px;
+}
+
+.cursosDestacados__Contenedor-Cursos__Cursoarticle{
     align-items: center;
     justify-content: center;
 }
 
-.cursosDestacados div {
+.cursosDestacados__Contenedor-Cursos {
     justify-content: space-around;
 }
 
-.cursosDestacados h2 {
+.cursosDestacados__Titulo {
     text-align: center;
     text-decoration:underline;
     font-size: 3.5em;
     margin: 2rem;
 }
 
-.cursosDestacados h4 {
+.cursosDestacados__Contenedor-Cursos__Curso__Nombre {
     font-size: 2rem;
     text-align: center;
 }
 
-.cursosDestacados img {
+.cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
     width: 35rem;
+}
+
+.cursosDestacados__Contenedor-Cursos__Curso__Picture{
+    justify-content: center;
+    align-items: center;
 }
 
 
 @media screen and (max-width: 1124px) {
-    .cursosDestacados img {
+    .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
         width: 20rem;
     }
 }
 
 @media screen and (max-width: 660px) {
-    .cursosDestacados img {
+    .cursosDestacados{
+        margin: 1rem;
+        margin-bottom: 4rem;
+    }
+    .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
         width: 10rem;
     }
-    .cursosDestacados h2 {
+    .cursosDestacados__Titulo {
         text-align: center;
         text-decoration:underline;
         font-size: 3em;
         margin: 2rem;
     }
     
-    .cursosDestacados h4 {
-        font-size: 1.5rem;
+    .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
+        font-size: 1.2rem;
         text-align: center;
     }
 }
+
+
 
 
 
@@ -564,8 +605,9 @@ footer li:hover {
 
 /* QUIENES-SOMOS: Nosotros */
 
-.nosotros article {
-    width: 60%;
+.MainNosotros__Sobre-Nosotros__article {
+    width: 80%;
+    max-width: 1000px;
     padding: 3rem ;
     margin: 2rem auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
@@ -574,25 +616,26 @@ footer li:hover {
     gap: 1.5rem;
 }
 
-.nosotros h2 {
+.MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
     font-size: 3em;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.nosotros p {
+.MainNosotros__Sobre-Nosotros__article__Parrafo {
     margin: 0px 0px 2rem 1.5rem;
     font-size: 1.5em;
 }
 
-.nosotros h3 {
+.MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
     font-size: 2em;
 }
 
 /* QUIENES-SOMOS: Principios */
 
-.Principios article {
-    width: 50%;
+.MainNosotros__Principios-Objetivos {
+    width: 70%;
+    max-width: 840px;
     padding: 3rem;
     margin: 4rem auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(108, 112, 114, 0.07) 100%);
@@ -600,65 +643,98 @@ footer li:hover {
     border-radius: 1.5rem 5rem 5rem 1.5rem;
 }
 
-.Principios h3 {
-    display: inline-block;
+.MainNosotros__Principios-Objetivos {
     font-size: 2em;
 }
 
-.Principios li {
-    margin: 1rem;
-    font-size: 1.5em;
+.MainNosotros__Principios-Objetivos__article__Titulo{
+    font-size: 1em;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 
-.Principios ul {
+.MainNosotros__Principios-Objetivos__article__ul__li {
+    margin: 1rem;
+    font-size: 0.8em;
+}
+
+.MainNosotros__Principios-Objetivos__article__ul {
     margin: 2rem;
 }
 
 
 
 @media screen and (max-width: 1000px) {
-    .MainNosotros h2 {
+    .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
         font-size: 2.5em;
     }
-    .MainNosotros h3 {
+    .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
+        font-size: 1.8em;
+    }
+    .MainNosotros__Principios-Objetivos__article__Titulo {
+        font-size: 1.2em;
+    }
+
+    .MainNosotros__Sobre-Nosotros__article__Parrafo {
         font-size: 1.5em;
     }
-    .MainNosotros p {
-        font-size: 1em;
-    }
-    .MainNosotros li {
-        font-size: 1em;
+    .MainNosotros__Principios-Objetivos__article__ul__li {
+        font-size: 0.8em;
     }
 }
 
 
 @media screen and (max-width: 900px) {
-    .nosotros article {
+    .MainNosotros__Sobre-Nosotros__article {
         width: 90%;
+        padding: 1rem;
     }
 
-    .Principios article {
-        width: 80%;
+    .MainNosotros__Principios-Objetivos {
+        width: 85%;
+        padding: 1rem;
     }
-    .nosotros h2 {
+    .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
         font-size: 2.5em;
         margin-bottom: 2rem;
     }
-    .nosotros p {
-        font-size: 1em;
+    .MainNosotros__Sobre-Nosotros__article__Parrafo {
+        font-size: 1.3em;
     }
-    .nosotros h3 {
+    .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
         font-size: 1.5em;
     }
     
 }
 
 
+@media screen and (max-width:570px) {
+    .MainNosotros__Principios-Objetivos__article__ul__li {
+        font-size: 0.5em;
+    }
+    .MainNosotros__Principios-Objetivos__article__Titulo{
+        font-size: 0.9em;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .MainNosotros__Principios-Objetivos__article__ul{
+        margin: 0.1rem;
+    }
+    .MainNosotros__Sobre-Nosotros__article{
+        gap: 0.3rem;
+    }
+}
+
+
+
 
 /* CURSOS: Main */
-.cursos {
-    width: 50rem;
-    padding: 2rem 5rem;
+.MainCursos__Cursos-Disponibles {
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem 3rem;
     margin: 2rem auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
     box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
@@ -666,32 +742,32 @@ footer li:hover {
     gap: 1rem;
 }
 
-.cursos h3 {
+.MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
     font-size: 1.5em;
 }
 
-.cursos p {
+.MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
     font-size: 1em;
 }
 
-.cursos article {
+.MainCursos__Cursos-Disponibles__Contenedor-Curso {
     gap: 2rem;
     margin: 2rem auto;
 
 }
 
-.cursos div {
+.MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion {
     display: inline-block;
     width: 20rem;
     margin: 2.5rem;
 }
 
-.cursos img {
-    width: 10rem;
+.MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen {
+    width: 12rem;
     margin: 0 auto;
 }
 
-#h2cursos {
+.MainCursos__Titulo {
     margin: 2rem;
     text-align: center;
     font-size: 2.5em;
@@ -700,30 +776,38 @@ footer li:hover {
 
 
 @media screen and (max-width: 660px) {
-    .cursos {
-        width: 40rem;
+    .MainCursos__Cursos-Disponibles {
+        width: 90%;
         gap: 0.5rem;
     }
-    #h2cursos{
+    .MainCursos__Titulo{
         font-size: 1.5em;
     }
 }
 
 @media screen and (max-width: 470px) {
-    .cursos{
-        width: 30rem;
-        padding: 1rem 4rem;
+    
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen{
+        width: 8rem;
+        height: 10rem;
+    }
+
+    .MainCursos__Cursos-Disponibles{
+        padding: 1rem 1rem;
 
     }
-    .cursos h3 {
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
         font-size: 1.2em;
     }
     
-    .cursos p {
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
         font-size: 0.8em;
     }
-    .cursos div {
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion {
         width: 10rem;
+    }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso{
+        gap: 0.3rem;
     }
 
 }
@@ -731,6 +815,11 @@ footer li:hover {
 
 
 /* CONTACTO: Form*/
+
+.BodyContacto{
+    height: 100vh;
+    justify-content:space-between;
+}
 
 .GridForm{
     display: grid;
@@ -740,42 +829,34 @@ footer li:hover {
     max-width: 800px;
 }
 
-.contacto form textarea {
+.MainContacto__Section__Article__TextArea {
     font-size: 2em;
     grid-column: 1/5;
     width: 80%;
     height: 90%;
     margin: auto;
 }
-#FormBoton {
+.MainContacto__Section__Article__Boton {
     grid-column: 1/5;
     width: 15%;
     height: 40%;
     margin: auto;
 }
-.BodyContacto{
-    height: 100vh;
-    justify-content:space-between;
-}
-.contacto h1 {
+.MainContacto__Section__Article__h1 {
     text-align: center;
     margin: 2rem;
     font-size: 2.5em;
 }
 
-.contacto label {
-    margin: auto;
+
+
+.MainContacto__Section__Article__Label {
     text-align: center;
-
-}
-
-
-.contacto form label {
     margin: auto;
     font-size: 1.5em;
 }
 
-.contacto form {
+.MainContacto__Section__Article__Form {
     width: 70%;
     height: 40rem;
     padding: 3rem;
@@ -788,7 +869,7 @@ footer li:hover {
 
 
 @media screen and (max-width:900px) {
-    .contacto form label {
+    .MainContacto__Section__Article__Label {
         font-size: 1.2em;
     }
 
@@ -799,25 +880,25 @@ footer li:hover {
         display: flex;
         flex-direction: column;
     }
-    .contacto form {
+    .MainContacto__Section__Article__Form {
         height: 46rem;
     }
-    .contacto {
+    .MainContacto__Section__Article {
         margin-bottom: 1rem ;
     }
-    #FormBoton{
+    .MainContacto__Section__Article__Boton{
         height: 20%;
         width: 20%;
         font-size: 1em;
     }
-    .contacto form input {
+    .MainContacto__Section__Article__Inputt {
         width: 85%;
         margin: auto;
     } 
-    .contacto h1 {
+    .MainContacto__Section__Article__h1 {
         font-size: 2em;
     }
-    .contacto form textarea {
+    .MainContacto__Section__Article__TextArea {
         font-size: 1.5em;
     }
 }
@@ -825,7 +906,7 @@ footer li:hover {
 
 
 /* PROGRAMAS-SERVICIOS: MAIN */
-.programasServicios {
+.ProgramasServicios {
     padding: 2rem 0rem;
     width: 82rem;
     margin: 4rem auto;
@@ -835,7 +916,7 @@ footer li:hover {
 }
 
 
-.programasServicios article {
+.ProgramasServicios__Article {
     width: 80rem;
     padding: 3rem;
     margin: 1.5rem 0rem;
@@ -845,15 +926,15 @@ footer li:hover {
 
 }
 
-.programasServicios article h2 {
+.ProgramasServicios__Article__H2 {
     font-size: 2em;
 }
-.programasServicios article p {
+.ProgramasServicios__Article__P {
     font-size: 1.5em;
 }
 
 
-.programasServicios h1 {
+.ProgramasServicios__H1 {
     text-align: center;
     margin: 1rem;
     font-size: 2.5em;
@@ -861,64 +942,83 @@ footer li:hover {
 
 
 @media screen and (max-width: 950px) {
-    .programasServicios h1 {
+    .ProgramasServicios__H1 {
         font-size: 2em;
     }
 
-    .programasServicios article h2 {
+    .ProgramasServicios__Article__H2 {
         font-size: 1.5em;
     }
-    .programasServicios article p {
+    .ProgramasServicios__Article__P {
         font-size: 1em;
     }
     
-    .programasServicios article {
+    .ProgramasServicios__Article {
         width: 60rem;
         padding: 2rem;
         margin: 1rem;
     }
-    .programasServicios{
+    .ProgramasServicios{
         width: 62rem;
     }
 }
 
 @media screen and (max-width: 710px) {
-    .programasServicios h1 {
+    .ProgramasServicios__H1 {
         font-size: 1.8em;
     }
 
-    .programasServicios article h2 {
+    .ProgramasServicios__Article__H2 {
         font-size: 1.3em;
     }
-    .programasServicios article p {
+    .ProgramasServicios__Article__P {
         font-size: 0.8em;
     }
     
-    .programasServicios article {
+    .ProgramasServicios__Article {
         width: 40rem;
     }
-    .programasServicios{
+    .ProgramasServicios{
         width: 42rem;
     }
 }
 
 @media screen and (max-width: 475px) {
-    .programasServicios h1 {
+    .ProgramasServicios__H1 {
         font-size: 1.6em;
     }
 
-    .programasServicios article h2 {
+    .ProgramasServicios__Article__H2 {
         font-size: 1.2em;
     }
-    .programasServicios article p {
+    .ProgramasServicios__Article__P {
         font-size: 0.7em;
     }
     
-    .programasServicios article {
+    .ProgramasServicios__Article {
         width: 30rem;
     }
-    .programasServicios{
+    .ProgramasServicios{
         width: 32rem;
     }
     
+}
+
+
+@media screen and (max-width: 380px){
+    .ProgramasServicios__Article__H2{
+        text-align: center;
+    }
+    .ProgramasServicios__Article__P {
+        text-align: center;
+    }
+    .ProgramasServicios__Article {
+        border-radius: 1rem;
+        width: 95%;
+        margin: 0.5rem auto;
+    
+    }
+    .ProgramasServicios{
+        width: 90%;
+    }
 }
