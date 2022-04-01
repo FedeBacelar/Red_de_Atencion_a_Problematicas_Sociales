@@ -139,108 +139,6 @@ header {
 
 
 
-
-
-
-/*
-header nav {
-    justify-content:space-between;
-}
-
-header li {
-}
-
-header li:hover {
-    transform: scale(1.2);
-}
-
-header ul {
-    margin: 2rem 5rem;
-    justify-content: center;
-    width: auto;
-    gap: 5rem;
-    align-items: center;
-}
-
-header img {
-    width: 20rem;
-    margin: 0rem 2rem;
-}
-
-
-
-@media screen and (max-width: 1065px){
-    header li {
-        font-size: 0.9em;
-    }
-    header ul {
-        gap: 4rem;
-    }
-    
-}
-
-@media screen and (max-width: 1031px) {
-    header ul {
-        font-size: 2em;
-        margin: 1rem 3rem;
-        justify-content: center;
-        width: auto;
-        gap: 1.8rem;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 890px){
-    header li {
-        font-size: 0.8em;
-    }
-    
-}
-
-@media screen and (max-width: 837px){
-    header img {
-        width: 12rem;
-        margin: 0.5rem;
-        height: 5rem;
-    }
-    
-}
-
-@media screen and (max-width:720px) {
-    header img {
-        width: 10rem;
-        margin: auto 0.5rem;
-        height: 3rem;
-    }
-    header li {
-        font-size: 0.6em;
-    }
-    header nav {
-        gap: 0rem;
-    }
-    header ul {
-        margin: auto 0.5rem;
-        
-    }
-}
-
-@media screen and (max-width:535px) {
-    
-    header img {
-        width: 8rem;
-        margin: auto 0.3rem;
-        height: 3rem;
-    }
-    header ul {
-        margin: auto 0.5rem;
-        gap: 1rem;
-        flex-wrap: wrap;    
-    }
-    
-}
-
-*/
-
 /* FOOTER */
 
 .Footer {
@@ -268,15 +166,6 @@ header img {
     transform: scale(1.1);
 }
 
-
-/*  INDEX   */
-
-/*
-.INDEX {
-    gap: 7rem;
-}
-
-*/
 
 /* INDEX: QuienesSomos */
 
@@ -817,7 +706,6 @@ header img {
 /* CONTACTO: Form*/
 
 .BodyContacto{
-    height: 100vh;
     justify-content:space-between;
 }
 
@@ -827,6 +715,11 @@ header img {
     grid-template-rows: 1fr 1fr 8fr 3fr;
     grid-row-gap: 1rem;
     max-width: 800px;
+}
+
+.MainContacto{
+    min-height: 530px;
+    height: calc(100vh - 87.15px - 47.91px);
 }
 
 .MainContacto__Section__Article__TextArea {
@@ -858,7 +751,7 @@ header img {
 
 .MainContacto__Section__Article__Form {
     width: 70%;
-    height: 40rem;
+    height: 90%;
     padding: 3rem;
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
@@ -880,14 +773,21 @@ header img {
         display: flex;
         flex-direction: column;
     }
+    .MainContacto__Section__Article{
+        height: 50rem;
+    }
+    .MainContacto{
+        min-height: 600px;
+        height: calc(100vh - 87.15px - 47.91px);
+    }
     .MainContacto__Section__Article__Form {
-        height: 46rem;
+        height: 90%;
     }
     .MainContacto__Section__Article {
         margin-bottom: 1rem ;
     }
     .MainContacto__Section__Article__Boton{
-        height: 20%;
+        height: 30%;
         width: 20%;
         font-size: 1em;
     }
