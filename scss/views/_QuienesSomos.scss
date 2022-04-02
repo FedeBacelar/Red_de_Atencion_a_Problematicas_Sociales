@@ -1,0 +1,177 @@
+/* QUIENES-SOMOS: Nosotros*/
+
+.MainNosotros{
+    &__Sobre-Nosotros{
+        &__article {
+            width: 80%;
+            max-width: 1000px;
+            padding: 3rem ;
+            margin: 2rem auto;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+            box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+            border-radius: 1.5rem 1.5rem 5rem 5rem;
+            gap: 1.5rem;
+
+            &__Titulo-Principal {
+                font-size: 3em;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            &__Parrafo {
+                margin: 0px 0px 2rem 1.5rem;
+                font-size: 1.5em;
+            }
+
+            &__Titulo-Secundario {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+/*  QUIENES-SOMOS: Principios   */
+
+.MainNosotros{
+    &__Principios-Objetivos {
+        width: 70%;
+        max-width: 840px;
+        padding: 3rem;
+        margin: 4rem auto;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(108, 112, 114, 0.07) 100%);
+        box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+        border-radius: 1.5rem 5rem 5rem 1.5rem;
+        font-size: 2em;
+
+        &__article{
+
+            &__Titulo{
+                font-size: 1em;
+                margin-left: 1.5rem;
+                margin-top: 1rem;
+            }
+
+            &__ul{
+                margin: 2rem;
+
+                &__li {
+                    margin: 1rem;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .MainNosotros{
+        &__Sobre-Nosotros{
+
+            &__article{
+
+                &__Titulo-Principal {
+                    font-size: 2.5em;
+                }
+
+                &__Titulo-Secundario {
+                    font-size: 1.8em;
+                }
+
+                &__Parrafo {
+                    font-size: 1.5em;
+                }
+
+                &__ul{
+
+                    &__li {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+    
+
+    
+    
+}
+
+
+@media screen and (max-width: 900px) {
+    .MainNosotros{
+        &__Sobre-Nosotros{
+
+            &__article {
+                width: 90%;
+                padding: 1rem;
+
+                &__Titulo-Principal {
+                    font-size: 2.5em;
+                    margin-bottom: 2rem;
+                }
+
+                &__Parrafo {
+                    font-size: 1.3em;
+                }
+
+                &__Titulo-Secundario {
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        &__Principios-Objetivos {
+            width: 85%;
+            padding: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:570px) {
+    .MainNosotros{
+
+        &__Principios-Objetivos{
+
+            &__article{
+
+                &__ul{
+
+                    &__li {
+
+                        font-size: 0.5em;
+                    }
+                }
+
+                &__Titulo{
+                    font-size: 0.9em;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .MainNosotros{
+
+        &__Principios-Objetivos{
+
+            &__article{
+
+                &__ul{
+                    margin: 0.1rem;
+                }
+            }
+        }
+        &__Sobre-Nosotros{
+            
+            &__article{
+                gap: 0.3rem;
+            }
+        }
+    }
+
+}

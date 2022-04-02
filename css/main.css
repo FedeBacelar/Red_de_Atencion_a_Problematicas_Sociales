@@ -1,0 +1,387 @@
+/*  MISCELANEOUS    */
+@keyframes CargarContenido {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+/*.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+}*/
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.589); }
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link .navbar-light .navbar-nav .show > .nav-link {
+    color: white; }
+
+body {
+  background: linear-gradient(180deg, #72AFED 0%, rgba(18, 72, 126, 0.8) 100%); }
+
+.FlexRow {
+  display: flex;
+  flex-direction: row; }
+
+.FlexColumn {
+  display: flex;
+  flex-direction: column; }
+
+/*  RESET   */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal; }
+
+/*  GLOBALS */
+main * {
+  animation-name: CargarContenido;
+  animation-duration: 1.5s; }
+
+html {
+  font-size: 68.5%; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block; }
+
+li {
+  list-style-type: none; }
+
+/*  PARTIALS    */
+/*  FOOTER  */
+.Footer {
+  background-color: #243A50;
+  justify-content: end;
+  justify-items: center; }
+  .Footer__ul {
+    justify-content: flex-end;
+    gap: 0.7rem;
+    padding: 0;
+    margin: 0.7rem; }
+    .Footer__ul__li {
+      transition: transform 0.5s; }
+      .Footer__ul__li:hover {
+        transform: scale(1.1); }
+      .Footer__ul__li__a__picture__img {
+        width: 3rem; }
+
+/*  HEADER  */
+header {
+  background-color: #0C74DC; }
+
+.Navegacion__Logo {
+  width: 20rem;
+  margin: 0rem 2rem; }
+
+.Navegacion__Div {
+  font-size: 2em; }
+  .Navegacion__Div__Ul {
+    gap: 1rem; }
+    .Navegacion__Div__Ul__Li {
+      color: white;
+      transition: transform 0.5s; }
+      .Navegacion__Div__Ul__Li:hover {
+        transform: scale(1.1); }
+
+.Navegacion__Btn {
+  width: 8rem;
+  height: 5rem; }
+
+.Navegacion__Icon-Btn {
+  width: 5rem;
+  height: 3rem; }
+
+@media screen and (max-width: 991.9px) {
+  .Navegacion__Div__Ul__Li {
+    text-align: center;
+    border: black solid 0.1rem; } }
+
+@media screen and (max-width: 400px) {
+  .Navegacion__Btn {
+    width: 6rem;
+    height: 4rem; }
+  .Navegacion__Icon-Btn {
+    width: 3rem;
+    height: 2rem; }
+  .Navegacion__Logo {
+    width: 15rem;
+    margin: 0rem 1rem; } }
+
+/*  VIEWS   */
+/* INDEX: QuienesSomos */
+.quienesSomos {
+  width: 80%;
+  margin: 5rem auto;
+  max-width: 963px; }
+  .quienesSomos__article {
+    margin: 1rem;
+    justify-content: center; }
+    .quienesSomos__article__div {
+      width: 40rem;
+      padding: 4rem; }
+      .quienesSomos__article__div__Titulo {
+        text-align: center;
+        font-size: 3rem;
+        text-decoration: underline;
+        margin: 2rem; }
+      .quienesSomos__article__div__Parrafo {
+        font-size: 2rem; }
+    .quienesSomos__article__picture__imagen {
+      width: 40rem; }
+
+@media screen and (max-width: 1210px) {
+  .quienesSomos__article__div {
+    width: 30rem;
+    padding: 2rem; }
+  .quienesSomos__article__picture__imagenimg {
+    width: 30rem; } }
+
+@media screen and (max-width: 1000px) {
+  .quienesSomos {
+    width: 100%; }
+    .quienesSomos__article__div {
+      width: 25rem;
+      padding: 1.5rem; }
+      .quienesSomos__article__div__Titulo {
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: underline;
+        margin: 1.5rem; }
+      .quienesSomos__article__div__Parrafo {
+        font-size: 1rem; }
+    .quienesSomos__article__picture__imagen {
+      width: 25rem; } }
+
+@media screen and (max-width: 600px) {
+  .quienesSomos {
+    width: 100%; }
+    .quienesSomos__article__div {
+      width: 20rem;
+      padding: 1rem; }
+      .quienesSomos__article__div__Titulo {
+        text-align: center;
+        font-size: 1.8rem;
+        text-decoration: underline;
+        margin: 1rem; }
+      .quienesSomos__article__div__Parrafo {
+        font-size: 0.8rem; }
+    .quienesSomos__article__picture__imagen {
+      width: 20rem; } }
+
+@media screen and (max-width: 460px) {
+  .quienesSomos__article__div {
+    padding: 0.5rem; }
+  .quienesSomos__article__Titulo {
+    font-size: 1.5rem;
+    margin: 0.5rem; }
+  .quienesSomos__article__picture__imagen {
+    width: 15rem; } }
+
+/*  INDEX: EjesDeTrabajo    */
+.GridEjesTrabajo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr 8fr 8fr 8fr; }
+
+.ejesTrabajo {
+  width: 80rem;
+  margin: 10rem auto;
+  max-width: 876px; }
+  .ejesTrabajo__Titulo {
+    text-align: center;
+    margin: auto 4rem;
+    font-size: 3.5em;
+    text-decoration: underline;
+    grid-column: 1/3; }
+  .ejesTrabajo__Div {
+    width: 100%;
+    padding: 3rem; }
+    .ejesTrabajo__Div__Titulo {
+      text-align: center;
+      font-size: 2.5em;
+      text-decoration: underline;
+      margin: 1rem; }
+    .ejesTrabajo__Div__Descripcion {
+      font-size: 1.5em; }
+  .ejesTrabajo__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ejesTrabajo__picture__Imagen {
+      width: 30rem;
+      margin: 1rem; }
+
+@media screen and (max-width: 900px) {
+  .ejesTrabajo {
+    width: 100%;
+    margin: 10rem auto; }
+    .ejesTrabajo__Div {
+      padding: 3rem; }
+    .ejesTrabajo__picture__Imagen {
+      width: 20rem;
+      margin: 1rem; } }
+
+@media screen and (max-width: 650px) {
+  .ejesTrabajo {
+    margin: 5rem auto; }
+    .ejesTrabajo__Div {
+      padding-right: 5rem; }
+      .ejesTrabajo__Div__Descripcion {
+        font-size: 1em; }
+      .ejesTrabajo__Div__Titulo {
+        text-align: center;
+        font-size: 2em;
+        text-decoration: underline;
+        margin: 1rem; }
+    .ejesTrabajo__Titulo {
+      text-align: center;
+      margin: auto 2rem;
+      font-size: 3em;
+      text-decoration: underline; }
+    .ejesTrabajo__picture__Imagen {
+      width: 15rem;
+      margin: 1rem; } }
+
+@media screen and (max-width: 465px) {
+  .GridEjesTrabajo {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  .ejesTrabajo {
+    width: 90%;
+    margin: 5rem auto; }
+    .ejesTrabajo__Titulo {
+      order: -3;
+      margin: 1rem; }
+    .ejesTrabajo__Div {
+      padding: 1rem; }
+    .ejesTrabajo__picture__Imagen {
+      width: 10rem;
+      margin-top: 2rem; }
+  #ImagenCapacitacion {
+    order: -2; }
+  #TextoCapacitacion {
+    order: -1; } }
+
+/* INDEX: CursosDestacados */
+.cursosDestacados {
+  gap: 1rem;
+  margin: 5rem auto;
+  max-width: 1110px; }
+  .cursosDestacados__Titulo {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3.5em;
+    margin: 2rem; }
+  .cursosDestacados__Contenedor-Cursos {
+    justify-content: space-around; }
+    .cursosDestacados__Contenedor-Cursos__Curso {
+      align-items: center;
+      justify-content: center; }
+      .cursosDestacados__Contenedor-Cursos__Curso__Picture {
+        justify-content: center;
+        align-items: center; }
+        .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
+          width: 35rem; }
+      .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
+        font-size: 2rem;
+        text-align: center; }
+
+@media screen and (max-width: 1124px) {
+  .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
+    width: 20rem; } }
+
+@media screen and (max-width: 660px) {
+  .cursosDestacados {
+    margin: 1rem;
+    margin-bottom: 4rem; }
+    .cursosDestacados__Titulo {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 3em;
+      margin: 2rem; }
+    .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
+      width: 10rem; }
+    .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
+      font-size: 1.2rem;
+      text-align: center; } }
+
+/* QUIENES-SOMOS: Nosotros*/
+.MainNosotros__Sobre-Nosotros__article {
+  width: 80%;
+  max-width: 1000px;
+  padding: 3rem;
+  margin: 2rem auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+  box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem 1.5rem 5rem 5rem;
+  gap: 1.5rem; }
+  .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 2rem; }
+  .MainNosotros__Sobre-Nosotros__article__Parrafo {
+    margin: 0px 0px 2rem 1.5rem;
+    font-size: 1.5em; }
+  .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
+    font-size: 2em; }
+
+/*  QUIENES-SOMOS: Principios   */
+.MainNosotros__Principios-Objetivos {
+  width: 70%;
+  max-width: 840px;
+  padding: 3rem;
+  margin: 4rem auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(108, 112, 114, 0.07) 100%);
+  box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem 5rem 5rem 1.5rem;
+  font-size: 2em; }
+  .MainNosotros__Principios-Objetivos__article__Titulo {
+    font-size: 1em;
+    margin-left: 1.5rem;
+    margin-top: 1rem; }
+  .MainNosotros__Principios-Objetivos__article__ul {
+    margin: 2rem; }
+    .MainNosotros__Principios-Objetivos__article__ul__li {
+      margin: 1rem;
+      font-size: 0.8em; }
+
+@media screen and (max-width: 1000px) {
+  .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
+    font-size: 2.5em; }
+  .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
+    font-size: 1.8em; }
+  .MainNosotros__Sobre-Nosotros__article__Parrafo {
+    font-size: 1.5em; }
+  .MainNosotros__Sobre-Nosotros__article__ul__li {
+    font-size: 0.8em; } }
+
+@media screen and (max-width: 900px) {
+  .MainNosotros__Sobre-Nosotros__article {
+    width: 90%;
+    padding: 1rem; }
+    .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
+      font-size: 2.5em;
+      margin-bottom: 2rem; }
+    .MainNosotros__Sobre-Nosotros__article__Parrafo {
+      font-size: 1.3em; }
+    .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
+      font-size: 1.5em; }
+  .MainNosotros__Principios-Objetivos {
+    width: 85%;
+    padding: 1rem; } }
+
+@media screen and (max-width: 570px) {
+  .MainNosotros__Principios-Objetivos__article__ul__li {
+    font-size: 0.5em; }
+  .MainNosotros__Principios-Objetivos__article__Titulo {
+    font-size: 0.9em; } }
+
+@media screen and (max-width: 400px) {
+  .MainNosotros__Principios-Objetivos__article__ul {
+    margin: 0.1rem; }
+  .MainNosotros__Sobre-Nosotros__article {
+    gap: 0.3rem; } }

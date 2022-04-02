@@ -1,0 +1,17 @@
+/*  MISCELANEOUS    */
+
+@import 'misc/Animations';
+@import 'misc/Bootstrap';
+@import 'misc/Mixins';
+@import 'misc/Normalize';
+
+
+/*  PARTIALS    */
+
+@import 'partials/Footer';
+@import 'partials/Header';
+
+/*  VIEWS   */
+
+@import "views/Inicio";
+@import "views/QuienesSomos";

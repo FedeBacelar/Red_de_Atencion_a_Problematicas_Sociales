@@ -1,0 +1,40 @@
+/*  FOOTER  */
+
+.Footer {
+    background-color: #243A50;
+    justify-content: end;
+    justify-items: center;
+
+    &__ul {
+        justify-content: flex-end;
+        gap: 0.7rem;
+        padding: 0;
+        margin: 0.7rem;
+
+        &__li {
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &__a{
+                &__picture{
+                    &__img {
+                        width: 3rem;
+                    }
+                }
+            }
+
+
+            
+        }
+    }
+
+
+}
+
+
+
+
+

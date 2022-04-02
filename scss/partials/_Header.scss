@@ -1,0 +1,75 @@
+
+/*  HEADER  */
+
+header {
+    background-color: #0C74DC;
+}
+
+.Navegacion{
+    &__Logo {
+        width: 20rem;
+        margin: 0rem 2rem;
+    }
+    &__Div{
+        font-size: 2em;
+
+        &__Ul{
+            gap: 1rem;
+            
+            &__Li{
+                color: white;
+                transition: transform 0.5s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+                
+            }
+
+        }
+
+    }
+    &__Btn{
+        width: 8rem;
+        height: 5rem;
+    }
+    &__Icon-Btn{
+        width: 5rem;
+        height: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width:991.9px) {
+    .Navegacion{
+        &__Div{
+            &__Ul{
+                &__Li{
+                    text-align: center;
+                    border: black solid 0.1rem;
+            
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .Navegacion{
+        &__Btn{
+            width: 6rem;
+            height: 4rem;
+        }
+        &__Icon-Btn{
+            width: 3rem;
+            height: 2rem;
+        }
+        &__Logo {
+            width: 15rem;
+            margin: 0rem 1rem;
+        }
+    }
+}
