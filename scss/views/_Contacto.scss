@@ -1,0 +1,115 @@
+
+/*  CONTACTO    */
+
+.BodyContacto{
+    justify-content:space-between;
+}
+
+.GridForm{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 8fr 3fr;
+    grid-row-gap: 1rem;
+    max-width: 800px;
+}
+
+.MainContacto{
+    min-height: 530px;
+    height: calc(100vh - 87.15px - 47.91px);
+
+    &__Section{
+        &__Article{
+            &__TextArea {
+                font-size: 2em;
+                grid-column: 1/5;
+                width: 80%;
+                height: 90%;
+                margin: auto;
+            }
+            &__Boton {
+                grid-column: 1/5;
+                width: 15%;
+                height: 40%;
+                margin: auto;
+            }
+            &__h1 {
+                text-align: center;
+                margin: 2rem;
+                font-size: 2.5em;
+            }
+            &__Label {
+                text-align: center;
+                margin: auto;
+                font-size: 1.5em;
+            }
+            &__Form {
+                width: 70%;
+                height: 90%;
+                padding: 3rem;
+                margin: 0 auto;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+                box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.25);
+                border-radius: 3rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .MainContacto{
+        &__Section{
+            &__Article{
+                &__Label {
+                    font-size: 1.2em;
+            }
+        }
+        }
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .GridForm{
+        display: flex;
+        flex-direction: column;
+    }
+    .MainContacto{
+        min-height: 600px;
+        height: calc(100vh - 87.15px - 47.91px);
+
+        &__Section{
+            &__Article{
+                margin-bottom: 1rem;
+                height: 50rem;
+
+                &__Form {
+                    height: 90%;
+                }
+                &__Boton{
+                    height: 30%;
+                    width: 20%;
+                    font-size: 1em;
+                }
+                &__Inputt {
+                    width: 85%;
+                    margin: auto;
+                } 
+                &__h1 {
+                    font-size: 2em;
+                }
+                &__TextArea {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    
+}

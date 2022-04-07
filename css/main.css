@@ -385,3 +385,199 @@ header {
     margin: 0.1rem; }
   .MainNosotros__Sobre-Nosotros__article {
     gap: 0.3rem; } }
+
+/* CURSOS: Main */
+.MainCursos__Titulo {
+  margin: 2rem;
+  text-align: center;
+  font-size: 2.5em; }
+
+.MainCursos__Cursos-Disponibles {
+  width: 80%;
+  max-width: 600px;
+  padding: 2rem 3rem;
+  margin: 2rem auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+  box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 15px 15px 50px 50px;
+  gap: 1rem; }
+  .MainCursos__Cursos-Disponibles__Contenedor-Curso {
+    gap: 2rem;
+    margin: 2rem auto; }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion {
+      display: inline-block;
+      width: 20rem;
+      margin: 2.5rem; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
+        font-size: 1.5em; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
+        font-size: 1em; }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen {
+      width: 12rem;
+      margin: 0 auto; }
+
+@media screen and (max-width: 660px) {
+  .MainCursos__Titulo {
+    font-size: 1.5em; }
+  .MainCursos__Cursos-Disponibles {
+    width: 90%;
+    gap: 0.5rem; } }
+
+@media screen and (max-width: 470px) {
+  .MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen {
+    width: 8rem;
+    height: 10rem; }
+  .MainCursos__Cursos-Disponibles {
+    padding: 1rem 1rem; }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso {
+      gap: 0.3rem; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
+        font-size: 1.2em; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
+        font-size: 0.8em; }
+    .MainCursos__Cursos-Disponibles__Descripcion {
+      width: 10rem; } }
+
+/*  CONTACTO    */
+.BodyContacto {
+  justify-content: space-between; }
+
+.GridForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 8fr 3fr;
+  grid-row-gap: 1rem;
+  max-width: 800px; }
+
+.MainContacto {
+  min-height: 530px;
+  height: calc(100vh - 87.15px - 47.91px); }
+  .MainContacto__Section__Article__TextArea {
+    font-size: 2em;
+    grid-column: 1/5;
+    width: 80%;
+    height: 90%;
+    margin: auto; }
+  .MainContacto__Section__Article__Boton {
+    grid-column: 1/5;
+    width: 15%;
+    height: 40%;
+    margin: auto; }
+  .MainContacto__Section__Article__h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5em; }
+  .MainContacto__Section__Article__Label {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em; }
+  .MainContacto__Section__Article__Form {
+    width: 70%;
+    height: 90%;
+    padding: 3rem;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.25);
+    border-radius: 3rem; }
+
+@media screen and (max-width: 900px) {
+  .MainContacto__Section__Article__Label {
+    font-size: 1.2em; } }
+
+@media screen and (max-width: 750px) {
+  .GridForm {
+    display: flex;
+    flex-direction: column; }
+  .MainContacto {
+    min-height: 600px;
+    height: calc(100vh - 87.15px - 47.91px); }
+    .MainContacto__Section__Article {
+      margin-bottom: 1rem;
+      height: 50rem; }
+      .MainContacto__Section__Article__Form {
+        height: 90%; }
+      .MainContacto__Section__Article__Boton {
+        height: 30%;
+        width: 20%;
+        font-size: 1em; }
+      .MainContacto__Section__Article__Inputt {
+        width: 85%;
+        margin: auto; }
+      .MainContacto__Section__Article__h1 {
+        font-size: 2em; }
+      .MainContacto__Section__Article__TextArea {
+        font-size: 1.5em; } }
+
+/*  PROGRAMAS-SERVICIOS */
+.ProgramasServicios {
+  padding: 2rem 0rem;
+  width: 82rem;
+  margin: 4rem auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+  box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+  border-radius: 1.5rem 1.5rem 5rem 5rem; }
+  .ProgramasServicios__Article {
+    width: 80rem;
+    padding: 3rem;
+    margin: 1.5rem 0rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(108, 112, 114, 0.21) 100%);
+    box-shadow: 0.8rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.25);
+    border-radius: 0rem 3rem 4rem 0rem; }
+    .ProgramasServicios__Article__H2 {
+      font-size: 2em; }
+    .ProgramasServicios__Article__P {
+      font-size: 1.5em; }
+  .ProgramasServicios__H1 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2.5em; }
+
+@media screen and (max-width: 950px) {
+  .ProgramasServicios {
+    width: 62rem; }
+    .ProgramasServicios__H1 {
+      font-size: 2em; }
+    .ProgramasServicios__Article {
+      width: 60rem;
+      padding: 2rem;
+      margin: 1rem; }
+      .ProgramasServicios__Article__H2 {
+        font-size: 1.5em; }
+      .ProgramasServicios__Article__P {
+        font-size: 1em; } }
+
+@media screen and (max-width: 710px) {
+  .ProgramasServicios {
+    width: 42rem; }
+    .ProgramasServicios__H1 {
+      font-size: 1.8em; }
+    .ProgramasServicios__Article {
+      width: 40rem; }
+      .ProgramasServicios__Article__H2 {
+        font-size: 1.3em; }
+      .ProgramasServicios__Article__P {
+        font-size: 0.8em; } }
+
+@media screen and (max-width: 475px) {
+  .ProgramasServicios {
+    width: 32rem; }
+    .ProgramasServicios__H1 {
+      font-size: 1.6em; }
+    .ProgramasServicios__Article {
+      width: 30rem; }
+      .ProgramasServicios__Article__H2 {
+        font-size: 1.2em; }
+      .ProgramasServicios__Article__P {
+        font-size: 0.7em; } }
+
+@media screen and (max-width: 380px) {
+  .ProgramasServicios {
+    width: 90%; }
+    .ProgramasServicios__Article {
+      border-radius: 1rem;
+      width: 95%;
+      margin: 0.5rem auto; }
+      .ProgramasServicios__Article__H2 {
+        text-align: center; }
+      .ProgramasServicios__Article__P {
+        text-align: center; } }

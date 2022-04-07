@@ -1,0 +1,120 @@
+/*  PROGRAMAS-SERVICIOS */
+.ProgramasServicios {
+    padding: 2rem 0rem;
+    width: 82rem;
+    margin: 4rem auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
+    box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem 1.5rem 5rem 5rem;
+
+    &__Article {
+        width: 80rem;
+        padding: 3rem;
+        margin: 1.5rem 0rem;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(108, 112, 114, 0.21) 100%);
+        box-shadow: 0.8rem 0.5rem 1rem 0.5rem rgba(0, 0, 0, 0.25);
+        border-radius: 0rem 3rem 4rem 0rem;
+
+        &__H2 {
+            font-size: 2em;
+        }
+        &__P {
+            font-size: 1.5em;
+        }
+    
+    }
+
+    &__H1 {
+        text-align: center;
+        margin: 1rem;
+        font-size: 2.5em;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    .ProgramasServicios{
+        width: 62rem;
+        &__H1 {
+            font-size: 2em;
+        }
+        &__Article{
+            width: 60rem;
+            padding: 2rem;
+            margin: 1rem;
+            &__H2 {
+                font-size: 1.5em;
+            }
+            &__P {
+                font-size: 1em;
+            }
+        }
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 710px) {
+    .ProgramasServicios{
+        width: 42rem;
+        &__H1 {
+            font-size: 1.8em;
+        }
+        &__Article{
+            width: 40rem;
+            &__H2 {
+                font-size: 1.3em;
+            }
+            &__P {
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 475px) {
+    .ProgramasServicios{
+        width: 32rem;
+        &__H1 {
+            font-size: 1.6em;
+        }
+        &__Article{
+            width: 30rem;
+            &__H2 {
+                font-size: 1.2em;
+            }
+            &__P {
+                font-size: 0.7em;
+            }
+        }
+    }
+
+    
+    
+}
+
+
+@media screen and (max-width: 380px){
+    .ProgramasServicios{
+        width: 90%;
+        &__Article{
+            border-radius: 1rem;
+            width: 95%;
+            margin: 0.5rem auto;
+            &__H2{
+                text-align: center;
+            }
+            &__P {
+                text-align: center;
+            }
+        }
+    }
+    
+}
