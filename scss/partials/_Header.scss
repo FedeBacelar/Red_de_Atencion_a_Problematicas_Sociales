@@ -14,16 +14,24 @@ header {
         font-size: 2em;
 
         &__Ul{
-            gap: 1rem;
+            gap: 2rem;
+            margin-right: 0.5rem;
             
-            &__Li{
-                color: white;
+            &__Li{                
                 transition: transform 0.5s;
-
                 &:hover{
                     transform: scale(1.1);
                 }
-                
+                &__Link{
+                    justify-content: center;
+                    font-size: 1em;
+                    color: rgba(255, 255, 255, 0.7);
+                    &--active{
+                        @extend .Navegacion__Div__Ul__Li__Link;
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
             }
 
         }

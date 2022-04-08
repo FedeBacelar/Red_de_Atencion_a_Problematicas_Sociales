@@ -53,11 +53,17 @@ li {
 /*  PARTIALS    */
 /*  FOOTER  */
 .Footer {
-  background-color: #243A50;
-  justify-content: end;
-  justify-items: center; }
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0rem;
+  background-color: #243A50; }
   .Footer__ul {
+    display: flex;
+    flex-direction: row;
     justify-content: flex-end;
+    align-items: flex-start;
     gap: 0.7rem;
     padding: 0;
     margin: 0.7rem; }
@@ -79,12 +85,19 @@ header {
 .Navegacion__Div {
   font-size: 2em; }
   .Navegacion__Div__Ul {
-    gap: 1rem; }
+    gap: 2rem;
+    margin-right: 0.5rem; }
     .Navegacion__Div__Ul__Li {
-      color: white;
       transition: transform 0.5s; }
       .Navegacion__Div__Ul__Li:hover {
         transform: scale(1.1); }
+      .Navegacion__Div__Ul__Li__Link, .Navegacion__Div__Ul__Li__Link--active {
+        justify-content: center;
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.7); }
+        .Navegacion__Div__Ul__Li__Link--active {
+          color: white;
+          text-decoration: underline; }
 
 .Navegacion__Btn {
   width: 8rem;
@@ -117,6 +130,11 @@ header {
   margin: 5rem auto;
   max-width: 963px; }
   .quienesSomos__article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
     margin: 1rem;
     justify-content: center; }
     .quienesSomos__article__div {
@@ -124,11 +142,11 @@ header {
       padding: 4rem; }
       .quienesSomos__article__div__Titulo {
         text-align: center;
-        font-size: 3rem;
+        font-size: 3em;
         text-decoration: underline;
         margin: 2rem; }
       .quienesSomos__article__div__Parrafo {
-        font-size: 2rem; }
+        font-size: 1.5em; }
     .quienesSomos__article__picture__imagen {
       width: 40rem; }
 
@@ -147,11 +165,11 @@ header {
       padding: 1.5rem; }
       .quienesSomos__article__div__Titulo {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5em;
         text-decoration: underline;
         margin: 1.5rem; }
       .quienesSomos__article__div__Parrafo {
-        font-size: 1rem; }
+        font-size: 1em; }
     .quienesSomos__article__picture__imagen {
       width: 25rem; } }
 
@@ -163,20 +181,20 @@ header {
       padding: 1rem; }
       .quienesSomos__article__div__Titulo {
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 2em;
         text-decoration: underline;
         margin: 1rem; }
       .quienesSomos__article__div__Parrafo {
-        font-size: 0.8rem; }
+        font-size: 0.8em; }
     .quienesSomos__article__picture__imagen {
       width: 20rem; } }
 
 @media screen and (max-width: 460px) {
   .quienesSomos__article__div {
     padding: 0.5rem; }
-  .quienesSomos__article__Titulo {
-    font-size: 1.5rem;
-    margin: 0.5rem; }
+    .quienesSomos__article__div__Titulo {
+      font-size: 1.5em;
+      margin: 0.5rem; }
   .quienesSomos__article__picture__imagen {
     width: 15rem; } }
 
@@ -193,7 +211,7 @@ header {
   .ejesTrabajo__Titulo {
     text-align: center;
     margin: auto 4rem;
-    font-size: 3.5em;
+    font-size: 3em;
     text-decoration: underline;
     grid-column: 1/3; }
   .ejesTrabajo__Div {
@@ -201,7 +219,7 @@ header {
     padding: 3rem; }
     .ejesTrabajo__Div__Titulo {
       text-align: center;
-      font-size: 2.5em;
+      font-size: 2em;
       text-decoration: underline;
       margin: 1rem; }
     .ejesTrabajo__Div__Descripcion {
@@ -233,13 +251,11 @@ header {
         font-size: 1em; }
       .ejesTrabajo__Div__Titulo {
         text-align: center;
-        font-size: 2em;
         text-decoration: underline;
         margin: 1rem; }
     .ejesTrabajo__Titulo {
       text-align: center;
       margin: auto 2rem;
-      font-size: 3em;
       text-decoration: underline; }
     .ejesTrabajo__picture__Imagen {
       width: 15rem;
@@ -268,26 +284,37 @@ header {
 
 /* INDEX: CursosDestacados */
 .cursosDestacados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin: 5rem auto;
   max-width: 1110px; }
   .cursosDestacados__Titulo {
     text-align: center;
     text-decoration: underline;
-    font-size: 3.5em;
+    font-size: 3em;
     margin: 2rem; }
   .cursosDestacados__Contenedor-Cursos {
-    justify-content: space-around; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 0rem; }
     .cursosDestacados__Contenedor-Cursos__Curso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: center; }
+      gap: 2rem; }
       .cursosDestacados__Contenedor-Cursos__Curso__Picture {
         justify-content: center;
         align-items: center; }
         .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
           width: 35rem; }
       .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
-        font-size: 2rem;
+        font-size: 2em;
         text-align: center; }
 
 @media screen and (max-width: 1124px) {
@@ -301,28 +328,32 @@ header {
     .cursosDestacados__Titulo {
       text-align: center;
       text-decoration: underline;
-      font-size: 3em;
       margin: 2rem; }
     .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
       width: 10rem; }
     .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
-      font-size: 1.2rem;
+      font-size: 1.2em;
       text-align: center; } }
 
 /* QUIENES-SOMOS: Nosotros*/
 .MainNosotros__Sobre-Nosotros__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
   width: 80%;
   max-width: 1000px;
   padding: 3rem;
   margin: 2rem auto;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
   box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
-  border-radius: 1.5rem 1.5rem 5rem 5rem;
-  gap: 1.5rem; }
+  border-radius: 1.5rem 1.5rem 5rem 5rem; }
   .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
     font-size: 3em;
     text-align: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    align-self: center; }
   .MainNosotros__Sobre-Nosotros__article__Parrafo {
     margin: 0px 0px 2rem 1.5rem;
     font-size: 1.5em; }
@@ -339,35 +370,38 @@ header {
   box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
   border-radius: 1.5rem 5rem 5rem 1.5rem;
   font-size: 2em; }
-  .MainNosotros__Principios-Objetivos__article__Titulo {
-    font-size: 1em;
-    margin-left: 1.5rem;
-    margin-top: 1rem; }
-  .MainNosotros__Principios-Objetivos__article__ul {
-    margin: 2rem; }
-    .MainNosotros__Principios-Objetivos__article__ul__li {
-      margin: 1rem;
-      font-size: 0.8em; }
+  .MainNosotros__Principios-Objetivos__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0rem; }
+    .MainNosotros__Principios-Objetivos__article__Titulo {
+      font-size: 1.2em;
+      margin-left: 1.5rem;
+      margin-top: 1rem; }
+    .MainNosotros__Principios-Objetivos__article__ul {
+      margin: 2rem; }
+      .MainNosotros__Principios-Objetivos__article__ul__li {
+        margin: 1rem;
+        font-size: 0.8em; }
 
 @media screen and (max-width: 1000px) {
   .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
     font-size: 2.5em; }
   .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
-    font-size: 1.8em; }
-  .MainNosotros__Sobre-Nosotros__article__Parrafo {
     font-size: 1.5em; }
-  .MainNosotros__Sobre-Nosotros__article__ul__li {
-    font-size: 0.8em; } }
+  .MainNosotros__Sobre-Nosotros__article__Parrafo {
+    font-size: 1.5em; } }
 
 @media screen and (max-width: 900px) {
   .MainNosotros__Sobre-Nosotros__article {
     width: 90%;
     padding: 1rem; }
     .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
-      font-size: 2.5em;
       margin-bottom: 2rem; }
     .MainNosotros__Sobre-Nosotros__article__Parrafo {
-      font-size: 1.3em; }
+      font-size: 0.8em; }
     .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
       font-size: 1.5em; }
   .MainNosotros__Principios-Objetivos {
@@ -376,7 +410,7 @@ header {
 
 @media screen and (max-width: 570px) {
   .MainNosotros__Principios-Objetivos__article__ul__li {
-    font-size: 0.5em; }
+    font-size: 0.6em; }
   .MainNosotros__Principios-Objetivos__article__Titulo {
     font-size: 0.9em; } }
 
@@ -393,15 +427,23 @@ header {
   font-size: 2.5em; }
 
 .MainCursos__Cursos-Disponibles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
   width: 80%;
   max-width: 600px;
   padding: 2rem 3rem;
   margin: 2rem auto;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
   box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
-  border-radius: 15px 15px 50px 50px;
-  gap: 1rem; }
+  border-radius: 15px 15px 50px 50px; }
   .MainCursos__Cursos-Disponibles__Contenedor-Curso {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 2rem;
     margin: 2rem auto; }
     .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion {
@@ -418,7 +460,7 @@ header {
 
 @media screen and (max-width: 660px) {
   .MainCursos__Titulo {
-    font-size: 1.5em; }
+    font-size: 2em; }
   .MainCursos__Cursos-Disponibles {
     width: 90%;
     gap: 0.5rem; } }
@@ -431,10 +473,13 @@ header {
     padding: 1rem 1rem; }
     .MainCursos__Cursos-Disponibles__Contenedor-Curso {
       gap: 0.3rem; }
-      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
-        font-size: 1.2em; }
-      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
-        font-size: 0.8em; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion {
+        margin: 0.8rem auto; }
+        .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
+          font-size: 1.2em; }
+        .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
+          font-size: 0.8em;
+          margin: 0; }
     .MainCursos__Cursos-Disponibles__Descripcion {
       width: 10rem; } }
 
@@ -510,6 +555,11 @@ header {
 
 /*  PROGRAMAS-SERVICIOS */
 .ProgramasServicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0rem;
   padding: 2rem 0rem;
   width: 82rem;
   margin: 4rem auto;
@@ -550,11 +600,9 @@ header {
   .ProgramasServicios {
     width: 42rem; }
     .ProgramasServicios__H1 {
-      font-size: 1.8em; }
+      font-size: 2em; }
     .ProgramasServicios__Article {
       width: 40rem; }
-      .ProgramasServicios__Article__H2 {
-        font-size: 1.3em; }
       .ProgramasServicios__Article__P {
         font-size: 0.8em; } }
 
@@ -562,13 +610,11 @@ header {
   .ProgramasServicios {
     width: 32rem; }
     .ProgramasServicios__H1 {
-      font-size: 1.6em; }
+      font-size: 1.5em; }
     .ProgramasServicios__Article {
       width: 30rem; }
-      .ProgramasServicios__Article__H2 {
-        font-size: 1.2em; }
       .ProgramasServicios__Article__P {
-        font-size: 0.7em; } }
+        font-size: 1.5em; } }
 
 @media screen and (max-width: 380px) {
   .ProgramasServicios {

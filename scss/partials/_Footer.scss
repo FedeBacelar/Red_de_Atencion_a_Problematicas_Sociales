@@ -1,13 +1,11 @@
 /*  FOOTER  */
 
 .Footer {
+    @include Flex(row,flex-end,center,0rem);
     background-color: #243A50;
-    justify-content: end;
-    justify-items: center;
 
     &__ul {
-        justify-content: flex-end;
-        gap: 0.7rem;
+        @include Flex(row,flex-end,flex-start,0.7rem);
         padding: 0;
         margin: 0.7rem;
 

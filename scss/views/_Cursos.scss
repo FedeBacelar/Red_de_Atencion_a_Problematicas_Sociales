@@ -3,9 +3,10 @@
     &__Titulo {
         margin: 2rem;
         text-align: center;
-        font-size: 2.5em;
+        font-size: map-get($Font-size , Titulo-Lg);
     }
     &__Cursos-Disponibles {
+        @include Flex(column,flex-start,flex-start,1rem);
         width: 80%;
         max-width: 600px;
         padding: 2rem 3rem;
@@ -13,11 +14,9 @@
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
         box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
         border-radius: 15px 15px 50px 50px;
-        gap: 1rem;
 
         &__Contenedor-Curso{
-            
-            gap: 2rem;
+            @include Flex(row,flex-start,flex-start,2rem);
             margin: 2rem auto;
 
             &__Descripcion{
@@ -25,10 +24,10 @@
                 width: 20rem;
                 margin: 2.5rem;
                 &__Nombre {
-                    font-size: 1.5em;
+                    font-size: map-get($Font-size ,SubTitulo-Lg);
                 }
                 &__Parrafo {
-                    font-size: 1em;
+                    font-size: map-get($Font-size , Parrafo-Lg);
                 }
             }
             &__Imagen {
@@ -45,7 +44,7 @@
 
     .MainCursos{
         &__Titulo{
-            font-size: 1.5em;
+            font-size: map-get($Font-size , Titulo-Md);
         }
         &__Cursos-Disponibles {
             width: 90%;
@@ -68,11 +67,13 @@
                 gap: 0.3rem;
 
                 &__Descripcion{
+                    margin: 0.8rem auto;
                     &__Nombre {
                         font-size: 1.2em;
                     }
                     &__Parrafo {
                         font-size: 0.8em;
+                        margin: 0;
                     }
                 }
             }

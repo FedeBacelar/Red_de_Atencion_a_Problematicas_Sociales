@@ -1,5 +1,6 @@
 /*  PROGRAMAS-SERVICIOS */
 .ProgramasServicios {
+    @include Flex(column,center,center,0rem);
     padding: 2rem 0rem;
     width: 82rem;
     margin: 4rem auto;
@@ -16,10 +17,10 @@
         border-radius: 0rem 3rem 4rem 0rem;
 
         &__H2 {
-            font-size: 2em;
+            font-size: map-get($Font-size , SubTitulo-Xl);
         }
         &__P {
-            font-size: 1.5em;
+            font-size: map-get($Font-size , Parrafo-Xl);
         }
     
     }
@@ -27,7 +28,7 @@
     &__H1 {
         text-align: center;
         margin: 1rem;
-        font-size: 2.5em;
+        font-size: map-get($Font-size , Titulo-Lg);
     }
 }
 
@@ -40,17 +41,17 @@
     .ProgramasServicios{
         width: 62rem;
         &__H1 {
-            font-size: 2em;
+            font-size: map-get($Font-size , Titulo-Md);
         }
         &__Article{
             width: 60rem;
             padding: 2rem;
             margin: 1rem;
             &__H2 {
-                font-size: 1.5em;
+                font-size: map-get($Font-size , SubTitulo-Lg);
             }
             &__P {
-                font-size: 1em;
+                font-size: map-get($Font-size , Parrafo-Lg);
             }
         }
     }
@@ -63,15 +64,15 @@
     .ProgramasServicios{
         width: 42rem;
         &__H1 {
-            font-size: 1.8em;
+            font-size: map-get($Font-size , Titulo-Md);
         }
         &__Article{
             width: 40rem;
             &__H2 {
-                font-size: 1.3em;
+                font-size: map-get($Font-size , Subtitulo-Md);
             }
             &__P {
-                font-size: 0.8em;
+                font-size: map-get($Font-size , Parrafo-Md);
             }
         }
     }
@@ -83,15 +84,12 @@
     .ProgramasServicios{
         width: 32rem;
         &__H1 {
-            font-size: 1.6em;
+            font-size: map-get($Font-size , Titulo-Sm);
         }
         &__Article{
             width: 30rem;
-            &__H2 {
-                font-size: 1.2em;
-            }
             &__P {
-                font-size: 0.7em;
+                font-size: map-get($Font-size , Titulo-Sm);
             }
         }
     }
@@ -110,6 +108,7 @@
             margin: 0.5rem auto;
             &__H2{
                 text-align: center;
+
             }
             &__P {
                 text-align: center;
