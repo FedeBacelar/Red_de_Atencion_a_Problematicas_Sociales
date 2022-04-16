@@ -9,7 +9,7 @@
         @include Flex(column,flex-start,flex-start,1rem);
         width: 80%;
         max-width: 600px;
-        padding: 2rem 3rem;
+        padding: 2rem 1rem;
         margin: 2rem auto;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
         box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
@@ -30,9 +30,12 @@
                     font-size: map-get($Font-size , Parrafo-Lg);
                 }
             }
-            &__Imagen {
-                width: 12rem;
-                margin: 0 auto;
+            &__Picture{
+                margin: auto 1rem;
+                &__Imagen {
+                    width: 12rem;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -53,11 +56,10 @@
     }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 520px) {
     
-    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen{
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Picture__Imagen{
         width: 8rem;
-        height: 10rem;
     }
 
     .MainCursos{
@@ -86,4 +88,26 @@
     
     
 
+}
+
+
+@media screen and (max-width: 400px) {
+    .MainCursos{
+        &__Cursos-Disponibles {
+            &__Contenedor-Curso{
+                flex-direction: column;
+                &__Picture{
+                    margin: 0 auto;
+                    &__Imagen{
+                        width: 10rem;
+                    }
+                }
+                &__Descripcion{
+                    &__Nombre {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }   
 }

@@ -136,8 +136,10 @@ header {
         margin: 2rem; }
       .quienesSomos__article__div__Parrafo {
         font-size: 1.5em; }
-    .quienesSomos__article__picture__imagen {
-      width: 40rem; }
+    .quienesSomos__article__picture {
+      margin: auto 1rem; }
+      .quienesSomos__article__picture__imagen {
+        width: 40rem; }
 
 @media screen and (max-width: 1210px) {
   .quienesSomos__article__div {
@@ -146,7 +148,7 @@ header {
   .quienesSomos__article__picture__imagenimg {
     width: 30rem; } }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1026px) {
   .quienesSomos {
     width: 100%; }
     .quienesSomos__article__div {
@@ -178,14 +180,16 @@ header {
     .quienesSomos__article__picture__imagen {
       width: 20rem; } }
 
-@media screen and (max-width: 460px) {
-  .quienesSomos__article__div {
-    padding: 0.5rem; }
-    .quienesSomos__article__div__Titulo {
-      font-size: 1.5em;
-      margin: 0.5rem; }
-  .quienesSomos__article__picture__imagen {
-    width: 15rem; } }
+@media screen and (max-width: 483px) {
+  .quienesSomos__article {
+    gap: 0; }
+    .quienesSomos__article__div {
+      padding: 0.5rem; }
+      .quienesSomos__article__div__Titulo {
+        font-size: 1.5em;
+        margin: 0.5rem; }
+    .quienesSomos__article__picture__imagen {
+      width: 13rem; } }
 
 /*  INDEX: EjesDeTrabajo    */
 .GridEjesTrabajo {
@@ -279,19 +283,21 @@ header {
   align-items: center;
   gap: 1rem;
   margin: 5rem auto;
-  max-width: 1110px; }
+  max-width: 1105px; }
   .cursosDestacados__Titulo {
     text-align: center;
     text-decoration: underline;
     font-size: 3em;
     margin: 2rem; }
   .cursosDestacados__Contenedor-Cursos {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     gap: 0rem; }
     .cursosDestacados__Contenedor-Cursos__Curso {
+      margin: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -301,16 +307,18 @@ header {
         justify-content: center;
         align-items: center; }
         .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
-          width: 35rem; }
+          width: 25rem; }
       .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
         font-size: 2em;
         text-align: center; }
 
 @media screen and (max-width: 1124px) {
-  .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
-    width: 20rem; } }
+  .cursosDestacados__Contenedor-Cursos__Curso {
+    margin: 1rem; }
+    .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
+      width: 20rem; } }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 730px) {
   .cursosDestacados {
     margin: 1rem;
     margin-bottom: 4rem; }
@@ -318,11 +326,17 @@ header {
       text-align: center;
       text-decoration: underline;
       margin: 2rem; }
-    .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
-      width: 10rem; }
-    .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
-      font-size: 1.2em;
-      text-align: center; } }
+    .cursosDestacados__Contenedor-Cursos {
+      width: 100%; }
+      .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
+        width: 10rem; }
+      .cursosDestacados__Contenedor-Cursos__Curso__Nombre {
+        font-size: 1.2em;
+        text-align: center; } }
+
+@media screen and (max-width: 375px) {
+  .cursosDestacados__Contenedor-Cursos__Curso__Picture__Imagen {
+    width: 8rem; } }
 
 /* QUIENES-SOMOS: Nosotros*/
 .MainNosotros__Sobre-Nosotros__article {
@@ -373,7 +387,10 @@ header {
       margin: 2rem; }
       .MainNosotros__Principios-Objetivos__article__ul__li {
         margin: 1rem;
-        font-size: 0.8em; }
+        font-size: 0.8em;
+        list-style-type: disc; }
+        .MainNosotros__Principios-Objetivos__article__ul__li__Item-Principio {
+          text-decoration: underline; }
 
 @media screen and (max-width: 1000px) {
   .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
@@ -390,7 +407,7 @@ header {
     .MainNosotros__Sobre-Nosotros__article__Titulo-Principal {
       margin-bottom: 2rem; }
     .MainNosotros__Sobre-Nosotros__article__Parrafo {
-      font-size: 0.8em; }
+      font-size: 1em; }
     .MainNosotros__Sobre-Nosotros__article__Titulo-Secundario {
       font-size: 1.5em; }
   .MainNosotros__Principios-Objetivos {
@@ -423,7 +440,7 @@ header {
   gap: 1rem;
   width: 80%;
   max-width: 600px;
-  padding: 2rem 3rem;
+  padding: 2rem 1rem;
   margin: 2rem auto;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(108, 112, 114, 0.14) 100%);
   box-shadow: 0.2rem 0.5rem 1rem 0.3rem rgba(0, 0, 0, 0.3);
@@ -443,9 +460,11 @@ header {
         font-size: 1.5em; }
       .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Parrafo {
         font-size: 1em; }
-    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen {
-      width: 12rem;
-      margin: 0 auto; }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Picture {
+      margin: auto 1rem; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Picture__Imagen {
+        width: 12rem;
+        margin: 0 auto; }
 
 @media screen and (max-width: 660px) {
   .MainCursos__Titulo {
@@ -454,10 +473,9 @@ header {
     width: 90%;
     gap: 0.5rem; } }
 
-@media screen and (max-width: 470px) {
-  .MainCursos__Cursos-Disponibles__Contenedor-Curso__Imagen {
-    width: 8rem;
-    height: 10rem; }
+@media screen and (max-width: 520px) {
+  .MainCursos__Cursos-Disponibles__Contenedor-Curso__Picture__Imagen {
+    width: 8rem; }
   .MainCursos__Cursos-Disponibles {
     padding: 1rem 1rem; }
     .MainCursos__Cursos-Disponibles__Contenedor-Curso {
@@ -471,6 +489,16 @@ header {
           margin: 0; }
     .MainCursos__Cursos-Disponibles__Descripcion {
       width: 10rem; } }
+
+@media screen and (max-width: 400px) {
+  .MainCursos__Cursos-Disponibles__Contenedor-Curso {
+    flex-direction: column; }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Picture {
+      margin: 0 auto; }
+      .MainCursos__Cursos-Disponibles__Contenedor-Curso__Picture__Imagen {
+        width: 10rem; }
+    .MainCursos__Cursos-Disponibles__Contenedor-Curso__Descripcion__Nombre {
+      text-align: center; } }
 
 /*  CONTACTO    */
 .BodyContacto {

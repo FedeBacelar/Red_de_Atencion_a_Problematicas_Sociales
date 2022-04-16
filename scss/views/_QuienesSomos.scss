@@ -59,6 +59,10 @@
                 &__li {
                     margin: 1rem;
                     font-size: map-get($Font-size , Parrafo-Md);
+                    list-style-type:disc;
+                    &__Item-Principio{
+                        text-decoration: underline;
+                    }
                 }
             }
         }
@@ -107,7 +111,7 @@
                 }
 
                 &__Parrafo {
-                    font-size: map-get($Font-size , Parrafo-Md);
+                    font-size: map-get($Font-size , Parrafo-Lg);
                 }
 
                 &__Titulo-Secundario {

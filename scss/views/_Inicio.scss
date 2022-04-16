@@ -28,7 +28,7 @@
         }
 
         &__picture{
-
+            margin: auto 1rem;
             &__imagen {
                 width: 40rem;
             }
@@ -54,7 +54,7 @@
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1026px) {
     
 
     .quienesSomos {
@@ -116,9 +116,10 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 483px) {
     .quienesSomos{
         &__article{
+            gap: 0;
             &__div {
                 padding: 0.5rem;
                 &__Titulo {
@@ -128,7 +129,7 @@
             }
             &__picture{
                 &__imagen {
-                    width: 15rem;
+                    width: 13rem;
                 }
             }
 
@@ -275,7 +276,7 @@
 .cursosDestacados{
     @include Flex(column,center,center,1rem);
     margin: 5rem auto;
-    max-width: 1110px;
+    max-width: 1105px;
     &__Titulo {
         text-align: center;
         text-decoration:underline;
@@ -283,14 +284,16 @@
         margin: 2rem;
     }
     &__Contenedor-Cursos{
+        width: 100%;
         @include Flex(row,space-around,flex-start,0rem);
         &__Curso{
+            margin: 1rem;
             @include Flex(column,center,center,2rem);
             &__Picture{
                 justify-content: center;
                 align-items: center;
                 &__Imagen {
-                    width: 35rem;
+                    width: 25rem;
                 }
             }
             &__Nombre {
@@ -309,6 +312,7 @@
     .cursosDestacados{
         &__Contenedor-Cursos{
             &__Curso{
+                margin: 1rem;
                 &__Picture{
                     &__Imagen {
                         width: 20rem;
@@ -319,7 +323,7 @@
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 730px) {
     .cursosDestacados{
         margin: 1rem;
         margin-bottom: 4rem;
@@ -329,6 +333,7 @@
             margin: 2rem;
         }
         &__Contenedor-Cursos{
+            width: 100%;
             &__Curso{
                 &__Picture{
                     &__Imagen {
@@ -339,6 +344,22 @@
                     font-size: map-get($Font-size , SubTitulo-Md);
                     text-align: center;
                 }
+            }
+        }
+    }
+}
+
+
+@media screen and(max-width: 375px) {
+    .cursosDestacados{
+        &__Contenedor-Cursos{
+            &__Curso{
+                &__Picture{
+                    &__Imagen {
+                        width: 8rem;
+                    }
+                }
+                
             }
         }
     }
